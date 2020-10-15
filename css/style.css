@@ -1,0 +1,83 @@
+*{
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 57px 1fr 85px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "cabecalho"
+    "principal"
+    "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: darkred;
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 2.rem;
+}
+
+.cabecalho > h2 {
+    margin: 0px;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 140px);
+    background-color: crimson;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 17px 11px 150px 54px rgba(82,204,202,1);
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: #444;
+    position: sticky;
+    bottom: 0px;
+}
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: 32%;
+}
+
+.modulo > h3 {
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: indigo;
+}

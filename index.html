@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Graficos</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<header class="cabecalho">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">Analise</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Setor<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Porcentagem</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Data de Abertura
+            </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+    <main class="principal">
+        <div class="conteudo">
+            <nav class="modulos">
+                <div class="modulo">
+                  <h3>Industrias de Componentes Eletronicos</h3>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="modulo">
+                  <h3>Industrias de Alimentos</h3>
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <div class="modulo">
+                  <h3>Industrias de Texteis</h3>
+                    <canvas id="myChart3"></canvas>
+                </div>
+                <div class="modulo">
+                  <h3>Industrias de Derivados de Leite</h3>
+                    <canvas id="myChart4"></canvas>
+                </div>
+                <div class="modulo">
+                  <h3>Industrias de Insumos Agricolas</h3>
+                    <canvas id="myChart5"></canvas>
+                </div>
+                <div class="modulo">
+                  <h3>Industrias de Recuperação Eletronica</h3>
+                    <canvas id="myChart6"></canvas>
+                </div>
+            </nav>
+        </div>
+    </main>
+<footer class="rodape">
+  FOR INSIDE
+</footer>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="C:\Users\leona\Pictures\Teste\graph\script.js"></script>
+</body>
+
+</html>
